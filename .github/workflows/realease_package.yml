@@ -50,3 +50,4 @@ jobs:
             exit 1
           fi
           cloudsmith push python ${{ env.CLOUDSMITH_NAMESPACE }}/${{ env.CLOUDSMITH_REPOSITORY }} dist/*.tar.gz --republish --tags ready-for-production
+        shell: bash
